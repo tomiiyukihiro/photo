@@ -224,7 +224,9 @@ var getTable = function(data) {
 		if (name == "lat" || name == "lng") {
 			geo[name] = val;
 			if (geo.lat != null && geo.lng != null) {
-				s.push("<tr><td>lat/lng</td><td>" + getHTMLMap(mypos.lat, mypos.lng, geo.lat, geo.lng) + "<br>" + getGeoLink(geo.lat, geo.lng) + "</td></tr>");
+				s.push("<tr><td>lat/lng</td><td>" 
+//				       + getHTMLMap(mypos.lat, mypos.lng, geo.lat, geo.lng) + "<br>"
+				       + getGeoLink(geo.lat, geo.lng) + "</td></tr>");
 			}
 			continue;
 		}
